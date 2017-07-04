@@ -1,0 +1,380 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Hotel API",
+		"_postman_id": "febbf158-a0c2-4174-e0f2-886b001cc3fe",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AWS",
+			"description": "",
+			"item": [
+				{
+					"name": "Get token (login)",
+					"request": {
+						"url": "http://54.77.217.126:8080/api-token-auth/",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Obtain token (login)."
+					},
+					"response": []
+				},
+				{
+					"name": "Register new user",
+					"request": {
+						"url": "http://54.77.217.126:8080/register/",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "nikola.stojanovic",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "password",
+									"value": "P@ssw0rd",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "first_name",
+									"value": "Nikola",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "last_name",
+									"value": "Stojanovic",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "email",
+									"value": "nikola.stojanovic@symphony.is",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "User registration."
+					},
+					"response": []
+				},
+				{
+					"name": "Add new hotel",
+					"request": {
+						"url": "http://54.77.217.126:8080/hotel_api/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "stars",
+									"value": "4",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "country",
+									"value": "Serbia",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "city",
+									"value": "Belgrade",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "location",
+									"value": "1, 2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "name",
+									"value": "Art Hotel",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "description",
+									"value": "Featuring an on-site restaurant and Situated on Belgrade's impressive pedestrian street and shopping zone, Art Hotel's décor is inspired by Italian style. The property offers individually designed, air-conditioned rooms and suites with minibar, free high-speed WiFi, free sauna and hairdryers.\n\nOffering views of the vibrant Knez Mihailova Street, the elegant Mosaic Restaurant & Bar serves a selection of quality wines and various specialities made from seasonal ingredients, a variety of coffees and homemade desserts, including ice cream and authentic Liège waffles.",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "price",
+									"value": "40.25",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "user",
+									"value": "2",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Add new hotel."
+					},
+					"response": []
+				},
+				{
+					"name": "All hotels",
+					"request": {
+						"url": "http://54.77.217.126:8080/hotel_api/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Get all hotels."
+					},
+					"response": []
+				},
+				{
+					"name": "Hotel details",
+					"request": {
+						"url": "http://54.77.217.126:8080/hotel_api/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Get hotel details."
+					},
+					"response": []
+				},
+				{
+					"name": "Hotel reviews",
+					"request": {
+						"url": "http://54.77.217.126:8080/hotel_api/get_hotel_reviews/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Get hotel reviews."
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite hotels",
+					"request": {
+						"url": "http://54.77.217.126:8080/favorites/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Get favorites for current user."
+					},
+					"response": []
+				},
+				{
+					"name": "Add to/remove from favorites",
+					"request": {
+						"url": "http://54.77.217.126:8080/favorites/add_remove",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hotel_id",
+									"value": "3",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "is_favorite",
+									"value": "False",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Add/remove from favorites."
+					},
+					"response": []
+				},
+				{
+					"name": "Hit counter",
+					"request": {
+						"url": "http://54.77.217.126:8080/increment_counter",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Hit counter (error handling in case of odd number)."
+					},
+					"response": []
+				},
+				{
+					"name": "Update hotel",
+					"request": {
+						"url": "http://54.77.217.126:8080/hotel_api/9/",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "stars",
+									"value": "5",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "country",
+									"value": "Serbia",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "city",
+									"value": "Belgrade",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "location",
+									"value": "1, 2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "name",
+									"value": "Art Hotel",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "description",
+									"value": "Featuring an on-site restaurant and Situated on Belgrade's impressive pedestrian street and shopping zone, Art Hotel's décor is inspired by Italian style. The property offers individually designed, air-conditioned rooms and suites with minibar, free high-speed WiFi, free sauna and hairdryers.\n\nOffering views of the vibrant Knez Mihailova Street, the elegant Mosaic Restaurant & Bar serves a selection of quality wines and various specialities made from seasonal ingredients, a variety of coffees and homemade desserts, including ice cream and authentic Liège waffles.",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "price",
+									"value": "40.25",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "user",
+									"value": "2",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": "Update existing hotel."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete hotel",
+					"request": {
+						"url": "http://54.77.217.126:8080/hotel_api/9/",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token fc6de7f1196b776fad0929fd44a5b93eb77aa4c3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Delete existing hotel."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

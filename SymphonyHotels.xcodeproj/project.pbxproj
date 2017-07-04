@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F18E59941F0B88110038C8AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59931F0B88110038C8AB /* User.swift */; };
+		F18E59961F0B88840038C8AB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59951F0B88840038C8AB /* Reachability.swift */; };
+		F18E599B1F0B88BC0038C8AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18E599A1F0B88BC0038C8AB /* CoreLocation.framework */; };
+		F18E599D1F0B88C20038C8AB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18E599C1F0B88C20038C8AB /* MapKit.framework */; };
+		F18E599F1F0B88C80038C8AB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18E599E1F0B88C80038C8AB /* SystemConfiguration.framework */; };
+		F18E59CE1F0BA98E0038C8AB /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59CB1F0BA98E0038C8AB /* Author.swift */; };
+		F18E59CF1F0BA98E0038C8AB /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59CC1F0BA98E0038C8AB /* Hotel.swift */; };
+		F18E59D01F0BA98E0038C8AB /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59CD1F0BA98E0038C8AB /* Review.swift */; };
+		F18E59D31F0BA9B30038C8AB /* HotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59D11F0BA9B30038C8AB /* HotelCell.swift */; };
+		F18E59D41F0BA9B30038C8AB /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59D21F0BA9B30038C8AB /* ReviewCell.swift */; };
+		F18E59DB1F0BA9DD0038C8AB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59D51F0BA9DD0038C8AB /* FavoritesViewController.swift */; };
+		F18E59DC1F0BA9DD0038C8AB /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59D61F0BA9DD0038C8AB /* HomeTableViewController.swift */; };
+		F18E59DD1F0BA9DD0038C8AB /* HotelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59D71F0BA9DD0038C8AB /* HotelDetailsViewController.swift */; };
+		F18E59DE1F0BA9DD0038C8AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59D81F0BA9DD0038C8AB /* LoginViewController.swift */; };
+		F18E59DF1F0BA9DD0038C8AB /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59D91F0BA9DD0038C8AB /* ReviewsViewController.swift */; };
+		F18E59E01F0BA9DD0038C8AB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59DA1F0BA9DD0038C8AB /* SignUpViewController.swift */; };
+		F18E59E21F0BA9F40038C8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18E59E11F0BA9F40038C8AB /* Main.storyboard */; };
+		F18E59E71F0BAA020038C8AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59E31F0BAA020038C8AB /* Constants.swift */; };
+		F18E59E81F0BAA020038C8AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59E41F0BAA020038C8AB /* Extensions.swift */; };
+		F18E59E91F0BAA020038C8AB /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59E51F0BAA020038C8AB /* RatingControl.swift */; };
+		F18E59EA1F0BAA020038C8AB /* RESTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59E61F0BAA020038C8AB /* RESTManager.swift */; };
+		F18E59EE1F0BDBC80038C8AB /* AddHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E59ED1F0BDBC80038C8AB /* AddHotelViewController.swift */; };
+		F1DBF86D1F0B7771008FB4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DBF86C1F0B7771008FB4D9 /* AppDelegate.swift */; };
+		F1DBF86F1F0B7771008FB4D9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DBF86E1F0B7771008FB4D9 /* WelcomeViewController.swift */; };
+		F1DBF8751F0B7771008FB4D9 /* SymphonyHotels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1DBF8731F0B7771008FB4D9 /* SymphonyHotels.xcdatamodeld */; };
+		F1DBF8771F0B7771008FB4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1DBF8761F0B7771008FB4D9 /* Assets.xcassets */; };
+		F1DBF87A1F0B7771008FB4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1DBF8781F0B7771008FB4D9 /* LaunchScreen.storyboard */; };
+		F1DBF8851F0B7771008FB4D9 /* SymphonyHotelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DBF8841F0B7771008FB4D9 /* SymphonyHotelsTests.swift */; };
+		F1DBF8901F0B7771008FB4D9 /* SymphonyHotelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DBF88F1F0B7771008FB4D9 /* SymphonyHotelsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1DBF8811F0B7771008FB4D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1DBF8611F0B7771008FB4D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1DBF8681F0B7771008FB4D9;
+			remoteInfo = SymphonyHotels;
+		};
+		F1DBF88C1F0B7771008FB4D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1DBF8611F0B7771008FB4D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1DBF8681F0B7771008FB4D9;
+			remoteInfo = SymphonyHotels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F18E59931F0B88110038C8AB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F18E59951F0B88840038C8AB /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F18E599A1F0B88BC0038C8AB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F18E599C1F0B88C20038C8AB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F18E599E1F0B88C80038C8AB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F18E59CB1F0BA98E0038C8AB /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		F18E59CC1F0BA98E0038C8AB /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		F18E59CD1F0BA98E0038C8AB /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		F18E59D11F0BA9B30038C8AB /* HotelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelCell.swift; sourceTree = "<group>"; };
+		F18E59D21F0BA9B30038C8AB /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		F18E59D51F0BA9DD0038C8AB /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesViewController.swift; path = SymphonyHotels/FavoritesViewController.swift; sourceTree = "<group>"; };
+		F18E59D61F0BA9DD0038C8AB /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = SymphonyHotels/HomeTableViewController.swift; sourceTree = "<group>"; };
+		F18E59D71F0BA9DD0038C8AB /* HotelDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HotelDetailsViewController.swift; path = SymphonyHotels/HotelDetailsViewController.swift; sourceTree = "<group>"; };
+		F18E59D81F0BA9DD0038C8AB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = SymphonyHotels/LoginViewController.swift; sourceTree = "<group>"; };
+		F18E59D91F0BA9DD0038C8AB /* ReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewsViewController.swift; path = SymphonyHotels/ReviewsViewController.swift; sourceTree = "<group>"; };
+		F18E59DA1F0BA9DD0038C8AB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = SymphonyHotels/SignUpViewController.swift; sourceTree = "<group>"; };
+		F18E59E11F0BA9F40038C8AB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F18E59E31F0BAA020038C8AB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F18E59E41F0BAA020038C8AB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F18E59E51F0BAA020038C8AB /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		F18E59E61F0BAA020038C8AB /* RESTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTManager.swift; sourceTree = "<group>"; };
+		F18E59ED1F0BDBC80038C8AB /* AddHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddHotelViewController.swift; path = SymphonyHotels/AddHotelViewController.swift; sourceTree = "<group>"; };
+		F1DBF8691F0B7771008FB4D9 /* SymphonyHotels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymphonyHotels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DBF86C1F0B7771008FB4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SymphonyHotels/AppDelegate.swift; sourceTree = "<group>"; };
+		F1DBF86E1F0B7771008FB4D9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = SymphonyHotels/WelcomeViewController.swift; sourceTree = "<group>"; };
+		F1DBF8741F0B7771008FB4D9 /* SymphonyHotels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SymphonyHotels.xcdatamodel; sourceTree = "<group>"; };
+		F1DBF8761F0B7771008FB4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SymphonyHotels/Assets.xcassets; sourceTree = "<group>"; };
+		F1DBF8791F0B7771008FB4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1DBF87B1F0B7771008FB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SymphonyHotels/Info.plist; sourceTree = "<group>"; };
+		F1DBF8801F0B7771008FB4D9 /* SymphonyHotelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymphonyHotelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DBF8841F0B7771008FB4D9 /* SymphonyHotelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymphonyHotelsTests.swift; sourceTree = "<group>"; };
+		F1DBF8861F0B7771008FB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1DBF88B1F0B7771008FB4D9 /* SymphonyHotelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymphonyHotelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DBF88F1F0B7771008FB4D9 /* SymphonyHotelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymphonyHotelsUITests.swift; sourceTree = "<group>"; };
+		F1DBF8911F0B7771008FB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1DBF8661F0B7771008FB4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18E599F1F0B88C80038C8AB /* SystemConfiguration.framework in Frameworks */,
+				F18E599D1F0B88C20038C8AB /* MapKit.framework in Frameworks */,
+				F18E599B1F0B88BC0038C8AB /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DBF87D1F0B7771008FB4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DBF8881F0B7771008FB4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F18E59921F0B85E60038C8AB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F18E59E11F0BA9F40038C8AB /* Main.storyboard */,
+				F1DBF8781F0B7771008FB4D9 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F18E59991F0B88BC0038C8AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F18E599E1F0B88C80038C8AB /* SystemConfiguration.framework */,
+				F18E599C1F0B88C20038C8AB /* MapKit.framework */,
+				F18E599A1F0B88BC0038C8AB /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F18E59C61F0BA3F50038C8AB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F18E59E31F0BAA020038C8AB /* Constants.swift */,
+				F18E59E41F0BAA020038C8AB /* Extensions.swift */,
+				F18E59E51F0BAA020038C8AB /* RatingControl.swift */,
+				F18E59E61F0BAA020038C8AB /* RESTManager.swift */,
+				F18E59951F0B88840038C8AB /* Reachability.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F18E59C71F0BA46A0038C8AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1DBF8731F0B7771008FB4D9 /* SymphonyHotels.xcdatamodeld */,
+				F18E59931F0B88110038C8AB /* User.swift */,
+				F18E59CB1F0BA98E0038C8AB /* Author.swift */,
+				F18E59CC1F0BA98E0038C8AB /* Hotel.swift */,
+				F18E59CD1F0BA98E0038C8AB /* Review.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F18E59C81F0BA4790038C8AB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F18E59D11F0BA9B30038C8AB /* HotelCell.swift */,
+				F18E59D21F0BA9B30038C8AB /* ReviewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F18E59C91F0BA4880038C8AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F18E59ED1F0BDBC80038C8AB /* AddHotelViewController.swift */,
+				F1DBF86E1F0B7771008FB4D9 /* WelcomeViewController.swift */,
+				F18E59D51F0BA9DD0038C8AB /* FavoritesViewController.swift */,
+				F18E59D61F0BA9DD0038C8AB /* HomeTableViewController.swift */,
+				F18E59D71F0BA9DD0038C8AB /* HotelDetailsViewController.swift */,
+				F18E59D81F0BA9DD0038C8AB /* LoginViewController.swift */,
+				F18E59D91F0BA9DD0038C8AB /* ReviewsViewController.swift */,
+				F18E59DA1F0BA9DD0038C8AB /* SignUpViewController.swift */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F18E59CA1F0BA4A90038C8AB /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F1DBF86C1F0B7771008FB4D9 /* AppDelegate.swift */,
+				F1DBF8761F0B7771008FB4D9 /* Assets.xcassets */,
+				F1DBF87B1F0B7771008FB4D9 /* Info.plist */,
+			);
+			name = Misc;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F1DBF8601F0B7771008FB4D9 = {
+			isa = PBXGroup;
+			children = (
+				F1DBF86B1F0B7771008FB4D9 /* SymphonyHotels */,
+				F1DBF8831F0B7771008FB4D9 /* SymphonyHotelsTests */,
+				F1DBF88E1F0B7771008FB4D9 /* SymphonyHotelsUITests */,
+				F1DBF86A1F0B7771008FB4D9 /* Products */,
+				F18E59991F0B88BC0038C8AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1DBF86A1F0B7771008FB4D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1DBF8691F0B7771008FB4D9 /* SymphonyHotels.app */,
+				F1DBF8801F0B7771008FB4D9 /* SymphonyHotelsTests.xctest */,
+				F1DBF88B1F0B7771008FB4D9 /* SymphonyHotelsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1DBF86B1F0B7771008FB4D9 /* SymphonyHotels */ = {
+			isa = PBXGroup;
+			children = (
+				F18E59CA1F0BA4A90038C8AB /* Misc */,
+				F18E59C71F0BA46A0038C8AB /* Model */,
+				F18E59C81F0BA4790038C8AB /* Cells */,
+				F18E59C91F0BA4880038C8AB /* Controllers */,
+				F18E59921F0B85E60038C8AB /* Storyboards */,
+				F18E59C61F0BA3F50038C8AB /* Utilities */,
+			);
+			path = SymphonyHotels;
+			sourceTree = "<group>";
+		};
+		F1DBF8831F0B7771008FB4D9 /* SymphonyHotelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1DBF8841F0B7771008FB4D9 /* SymphonyHotelsTests.swift */,
+				F1DBF8861F0B7771008FB4D9 /* Info.plist */,
+			);
+			path = SymphonyHotelsTests;
+			sourceTree = "<group>";
+		};
+		F1DBF88E1F0B7771008FB4D9 /* SymphonyHotelsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1DBF88F1F0B7771008FB4D9 /* SymphonyHotelsUITests.swift */,
+				F1DBF8911F0B7771008FB4D9 /* Info.plist */,
+			);
+			path = SymphonyHotelsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1DBF8681F0B7771008FB4D9 /* SymphonyHotels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DBF8941F0B7771008FB4D9 /* Build configuration list for PBXNativeTarget "SymphonyHotels" */;
+			buildPhases = (
+				F1DBF8651F0B7771008FB4D9 /* Sources */,
+				F1DBF8661F0B7771008FB4D9 /* Frameworks */,
+				F1DBF8671F0B7771008FB4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SymphonyHotels;
+			productName = SymphonyHotels;
+			productReference = F1DBF8691F0B7771008FB4D9 /* SymphonyHotels.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1DBF87F1F0B7771008FB4D9 /* SymphonyHotelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DBF8971F0B7771008FB4D9 /* Build configuration list for PBXNativeTarget "SymphonyHotelsTests" */;
+			buildPhases = (
+				F1DBF87C1F0B7771008FB4D9 /* Sources */,
+				F1DBF87D1F0B7771008FB4D9 /* Frameworks */,
+				F1DBF87E1F0B7771008FB4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1DBF8821F0B7771008FB4D9 /* PBXTargetDependency */,
+			);
+			name = SymphonyHotelsTests;
+			productName = SymphonyHotelsTests;
+			productReference = F1DBF8801F0B7771008FB4D9 /* SymphonyHotelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1DBF88A1F0B7771008FB4D9 /* SymphonyHotelsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DBF89A1F0B7771008FB4D9 /* Build configuration list for PBXNativeTarget "SymphonyHotelsUITests" */;
+			buildPhases = (
+				F1DBF8871F0B7771008FB4D9 /* Sources */,
+				F1DBF8881F0B7771008FB4D9 /* Frameworks */,
+				F1DBF8891F0B7771008FB4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1DBF88D1F0B7771008FB4D9 /* PBXTargetDependency */,
+			);
+			name = SymphonyHotelsUITests;
+			productName = SymphonyHotelsUITests;
+			productReference = F1DBF88B1F0B7771008FB4D9 /* SymphonyHotelsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1DBF8611F0B7771008FB4D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Milan;
+				TargetAttributes = {
+					F1DBF8681F0B7771008FB4D9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 74XPPF9268;
+						ProvisioningStyle = Automatic;
+					};
+					F1DBF87F1F0B7771008FB4D9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 74XPPF9268;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1DBF8681F0B7771008FB4D9;
+					};
+					F1DBF88A1F0B7771008FB4D9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 74XPPF9268;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1DBF8681F0B7771008FB4D9;
+					};
+				};
+			};
+			buildConfigurationList = F1DBF8641F0B7771008FB4D9 /* Build configuration list for PBXProject "SymphonyHotels" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1DBF8601F0B7771008FB4D9;
+			productRefGroup = F1DBF86A1F0B7771008FB4D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1DBF8681F0B7771008FB4D9 /* SymphonyHotels */,
+				F1DBF87F1F0B7771008FB4D9 /* SymphonyHotelsTests */,
+				F1DBF88A1F0B7771008FB4D9 /* SymphonyHotelsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1DBF8671F0B7771008FB4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DBF87A1F0B7771008FB4D9 /* LaunchScreen.storyboard in Resources */,
+				F1DBF8771F0B7771008FB4D9 /* Assets.xcassets in Resources */,
+				F18E59E21F0BA9F40038C8AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DBF87E1F0B7771008FB4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DBF8891F0B7771008FB4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1DBF8651F0B7771008FB4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18E59DD1F0BA9DD0038C8AB /* HotelDetailsViewController.swift in Sources */,
+				F18E59941F0B88110038C8AB /* User.swift in Sources */,
+				F1DBF8751F0B7771008FB4D9 /* SymphonyHotels.xcdatamodeld in Sources */,
+				F1DBF86F1F0B7771008FB4D9 /* WelcomeViewController.swift in Sources */,
+				F18E59D01F0BA98E0038C8AB /* Review.swift in Sources */,
+				F18E59D31F0BA9B30038C8AB /* HotelCell.swift in Sources */,
+				F18E59E81F0BAA020038C8AB /* Extensions.swift in Sources */,
+				F18E59CF1F0BA98E0038C8AB /* Hotel.swift in Sources */,
+				F18E59DE1F0BA9DD0038C8AB /* LoginViewController.swift in Sources */,
+				F18E59E71F0BAA020038C8AB /* Constants.swift in Sources */,
+				F18E59DC1F0BA9DD0038C8AB /* HomeTableViewController.swift in Sources */,
+				F18E59EE1F0BDBC80038C8AB /* AddHotelViewController.swift in Sources */,
+				F18E59CE1F0BA98E0038C8AB /* Author.swift in Sources */,
+				F18E59DF1F0BA9DD0038C8AB /* ReviewsViewController.swift in Sources */,
+				F18E59E91F0BAA020038C8AB /* RatingControl.swift in Sources */,
+				F18E59DB1F0BA9DD0038C8AB /* FavoritesViewController.swift in Sources */,
+				F18E59961F0B88840038C8AB /* Reachability.swift in Sources */,
+				F1DBF86D1F0B7771008FB4D9 /* AppDelegate.swift in Sources */,
+				F18E59EA1F0BAA020038C8AB /* RESTManager.swift in Sources */,
+				F18E59E01F0BA9DD0038C8AB /* SignUpViewController.swift in Sources */,
+				F18E59D41F0BA9B30038C8AB /* ReviewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DBF87C1F0B7771008FB4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DBF8851F0B7771008FB4D9 /* SymphonyHotelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DBF8871F0B7771008FB4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DBF8901F0B7771008FB4D9 /* SymphonyHotelsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1DBF8821F0B7771008FB4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1DBF8681F0B7771008FB4D9 /* SymphonyHotels */;
+			targetProxy = F1DBF8811F0B7771008FB4D9 /* PBXContainerItemProxy */;
+		};
+		F1DBF88D1F0B7771008FB4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1DBF8681F0B7771008FB4D9 /* SymphonyHotels */;
+			targetProxy = F1DBF88C1F0B7771008FB4D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1DBF8781F0B7771008FB4D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1DBF8791F0B7771008FB4D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1DBF8921F0B7771008FB4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1DBF8931F0B7771008FB4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1DBF8951F0B7771008FB4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 74XPPF9268;
+				INFOPLIST_FILE = SymphonyHotels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CourseProject.SymphonyHotels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1DBF8961F0B7771008FB4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 74XPPF9268;
+				INFOPLIST_FILE = SymphonyHotels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CourseProject.SymphonyHotels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F1DBF8981F0B7771008FB4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 74XPPF9268;
+				INFOPLIST_FILE = SymphonyHotelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CourseProject.SymphonyHotelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SymphonyHotels.app/SymphonyHotels";
+			};
+			name = Debug;
+		};
+		F1DBF8991F0B7771008FB4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 74XPPF9268;
+				INFOPLIST_FILE = SymphonyHotelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CourseProject.SymphonyHotelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SymphonyHotels.app/SymphonyHotels";
+			};
+			name = Release;
+		};
+		F1DBF89B1F0B7771008FB4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 74XPPF9268;
+				INFOPLIST_FILE = SymphonyHotelsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CourseProject.SymphonyHotelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SymphonyHotels;
+			};
+			name = Debug;
+		};
+		F1DBF89C1F0B7771008FB4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 74XPPF9268;
+				INFOPLIST_FILE = SymphonyHotelsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CourseProject.SymphonyHotelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SymphonyHotels;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1DBF8641F0B7771008FB4D9 /* Build configuration list for PBXProject "SymphonyHotels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DBF8921F0B7771008FB4D9 /* Debug */,
+				F1DBF8931F0B7771008FB4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1DBF8941F0B7771008FB4D9 /* Build configuration list for PBXNativeTarget "SymphonyHotels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DBF8951F0B7771008FB4D9 /* Debug */,
+				F1DBF8961F0B7771008FB4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1DBF8971F0B7771008FB4D9 /* Build configuration list for PBXNativeTarget "SymphonyHotelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DBF8981F0B7771008FB4D9 /* Debug */,
+				F1DBF8991F0B7771008FB4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1DBF89A1F0B7771008FB4D9 /* Build configuration list for PBXNativeTarget "SymphonyHotelsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DBF89B1F0B7771008FB4D9 /* Debug */,
+				F1DBF89C1F0B7771008FB4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1DBF8731F0B7771008FB4D9 /* SymphonyHotels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1DBF8741F0B7771008FB4D9 /* SymphonyHotels.xcdatamodel */,
+			);
+			currentVersion = F1DBF8741F0B7771008FB4D9 /* SymphonyHotels.xcdatamodel */;
+			path = SymphonyHotels.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1DBF8611F0B7771008FB4D9 /* Project object */;
+}
